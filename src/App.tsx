@@ -15,41 +15,65 @@ const App: React.FC = () => {
     left: 0,
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.3)", // Adjust the alpha value for the desired opacity
+    backgroundColor: "rgba(0, 0, 0, 0.3)", // Opacity for the background
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  };
+
+  const contentStyle: React.CSSProperties = {
+    // Style for the content within the overlay
+    background: "rgba(0, 0, 0, 0.8)", // Adjust opacity as needed
+    padding: "2rem",
+    borderRadius: "0.5rem",
   };
 
   return (
     <div className="h-screen" style={containerStyle}>
-      <div style={overlayStyle} className="center">
-        <div className="z-10 text-center flex flex-col items-center justify-center w-2/4 h-3/4 relative bg-black opacity-80 rounded-3xl	">
+      <div style={overlayStyle}>
+        {/* Centered div */}
+        <div
+          style={contentStyle}
+          className="text-center text-slate-300 w-2/4 rounded-lg"
+        >
           {/* Title */}
-          <p className="text-6xl font-semibold text-slate-300">VOXTIR</p>
+          <p className="text-4xl font-semibold">VOXTIR</p>
 
           {/* Description */}
-          <p className="text-lg text-slate-300 mt-4 px-4">
-            {" "}
-            {/* Added 'px-4' for padding */}
-            The speech to text helper of the future. <br />
-            Voxtir is a speech to text helper that helps you transcribe your
-            files and gain insights from them. The app is built around
-            collaboration and sharing transcriptions with others. You can use it
-            for free as long as you don't commercialize it. Deploy your own
-            instance or use a hosted one. Voxtir is built around a data format
-            that can be used to train AI for better performance. You don't have
-            to share anything, but we'd appreciate it if you did. Our users love
-            giving back, and we'll soon publish the first curated transcription
-            dataset. Subscribe to our newsletter to get notified when it's
-            ready.
+          <p className="text-lg mt-4 px-4">
+            Your Future Speech-to-Text Sidekick! 🚀 <br />
+            <br />
+            Voxtir: the ultimate speech-to-text tool that turns your files into
+            golden transcripts! It's all about teamwork and sharing – transcribe
+            with friends and colleagues. <br /> You can launch your own instance
+            using our public source code or hitch a ride on our hosted service.
+            <br />
+            Voxtir's data format can supercharge AI training! Each trancsription
+            you edit will improve your private model. No pressure to share, but
+            it'd make our day 🌟
+            <br />
+            Our awesome users give back, and soon, we'll drop a top-notch
+            transcript dataset. Subscribe to our newsletter for the scoop!
           </p>
 
           {/* Buttons */}
-          <div className="mt-4 flex flex-col items-center">
-            <button className=" bg-slate-600 text-white px-4 py-2 rounded-2xl mb-2">
-              Log in
-            </button>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-2xl">
-              Contact us
-            </button>
+          <div className="mt-4">
+            <div className="flex flex-col space-y-2 items-center">
+              <button className="bg-slate-600 text-white hover:bg-slate-700 w-32 h-12 rounded-2xl">
+                Log in
+              </button>
+              <div className="flex flex-col items-center">
+                <label htmlFor="email" className="text-white">
+                  Email:
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  className="bg-white text-black w-32 h-12 rounded-2xl px-2"
+                  placeholder="Enter your email"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
