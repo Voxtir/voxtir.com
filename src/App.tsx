@@ -59,20 +59,12 @@ const App: React.FC = () => {
           {/* Buttons */}
           <div className="mt-4">
             <div className="flex flex-col space-y-2 items-center">
-              <button className="bg-slate-600 text-white hover:bg-slate-700 w-32 h-12 rounded-2xl">
+              <a
+                href="https://app.voxtir.com"
+                className="bg-blue-800 text-white hover:bg-blue-600 w-32 h-12 rounded-2xl block text-center pt-3"
+              >
                 Log in
-              </button>
-              <div className="flex flex-col items-center">
-                <label htmlFor="email" className="text-white">
-                  Email:
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="bg-white text-black w-32 h-12 rounded-2xl px-2"
-                  placeholder="Enter your email"
-                />
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -80,7 +72,7 @@ const App: React.FC = () => {
         {/* GitHub icon */}
         <div className="absolute bottom-4 right-4 z-10">
           <a
-            href="https://github.com/yourgithub"
+            href="https://github.com/Voxtir/voxtir"
             target="_blank"
             rel="noopener noreferrer"
           >
