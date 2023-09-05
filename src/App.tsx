@@ -43,27 +43,36 @@ const App: React.FC = () => {
           <p className="text-lg mt-4 px-4">
             Your Future Speech-to-Text Sidekick! 🚀 <br />
             <br />
-            Voxtir: the ultimate speech-to-text tool that turns your files into
-            golden transcripts! It's all about teamwork and sharing – transcribe
-            with friends and colleagues. <br /> You can launch your own instance
-            using our public source code or hitch a ride on our hosted service.
+            The speech-to-text tool that turns your files into golden
+            transcripts! It's built around about teamwork and sharing, so you
+            easily can get the finished version in the right hands. <br />
             <br />
-            Voxtir's data format can supercharge AI training! Each trancsription
-            you edit will improve your private model. No pressure to share, but
-            it'd make our day 🌟
+            The Voxtir transcription service provides speaker annotations and
+            deep links from the transcript to the audio along with a host of
+            other features in the pipeline such as: a suite of AI-tools to help
+            you get eliminate manual work and find the important insights from
+            your audio. <br />
             <br />
-            Our awesome users give back, and soon, we'll drop a top-notch
-            transcript dataset. Subscribe to our newsletter for the scoop!
+            Voxtir's data format can supercharge AI training! Each transcription
+            you edit can improve your private model 🌟 Our awesome users give
+            back to the community, by submitting their finished transcription
+            for the public to see and use. Soon, we'll drop a top-notch
+            transcript dataset. Keep an eye on our Github for it! 🤩
+            <br />
+            <br />
+            Voxtir is often used for academic research and we're happy to help.
+            Please reach out through our Github if you have any questions or
+            requests.
           </p>
 
           {/* Buttons */}
           <div className="mt-4">
             <div className="flex flex-col space-y-2 items-center">
               <a
-                href="https://app.voxtir.com"
+                href="https://app.staging.voxtir.com"
                 className="bg-blue-800 text-white hover:bg-blue-600 w-32 h-12 rounded-2xl block text-center pt-3"
               >
-                Log in
+                Beta access
               </a>
             </div>
           </div>
