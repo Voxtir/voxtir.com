@@ -15,31 +15,29 @@ const App: React.FC = () => {
     left: 0,
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.3)", // Opacity for the background
+    backgroundColor: "rgba(0, 0, 0, 0.3)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
   };
 
   const contentStyle: React.CSSProperties = {
-    // Style for the content within the overlay
-    background: "rgba(0, 0, 0, 0.8)", // Adjust opacity as needed
+    background: "rgba(0, 0, 0, 0.8)",
     padding: "2rem",
     borderRadius: "0.5rem",
+    maxWidth: "90%", // Adjust the maximum width
+    maxHeight: "90vh", // Adjust the maximum height
+    overflowY: "auto", // Add vertical scrolling
   };
 
   return (
-    <div className="h-screen" style={containerStyle}>
+    <div className="h-screen overflow-x-hidden" style={containerStyle}>
       <div style={overlayStyle}>
-        {/* Centered div */}
         <div
           style={contentStyle}
-          className="text-center text-slate-300 w-2/4 rounded-lg"
+          className="text-center text-slate-300 w-full md:w-2/4 rounded-lg"
         >
-          {/* Title */}
           <p className="text-4xl font-semibold">VOXTIR</p>
-
-          {/* Description */}
           <p className="text-lg mt-4 px-4">
             Your Future Speech-to-Text Sidekick! 🚀 <br />
             <br />
@@ -77,8 +75,6 @@ const App: React.FC = () => {
             </div>
           </div>
         </div>
-
-        {/* GitHub icon */}
         <div className="absolute bottom-4 right-4 z-10">
           <a
             href="https://github.com/Voxtir/voxtir"
