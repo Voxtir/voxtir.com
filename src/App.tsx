@@ -60,14 +60,29 @@ const App: React.FC = () => {
             <br />
             Voxtir is often used for academic research and we're happy to help.
             Please reach out through our Github if you have any questions or
-            requests.
+            requests or at info@voxtir.com. By using our service, you agree to
+            our{" "}
+            <a
+              className="text-blue-400 hover:text-blue-700"
+              href="https://docs.google.com/document/d/1nUmNyFWw1DN-MbqJlrRC2Q2lyhyEbfrt0WOg8Rmsay4/edit?usp=drive_link"
+            >
+              Terms of Service
+            </a>{" "}
+            and{" "}
+            <a
+              className="text-blue-400 hover:text-blue-700"
+              href="https://docs.google.com/document/d/1sRgX_ixzOPPj_l-QfCbULAjkJTtXh-2QYA4ITMERAsI/edit?usp=drive_link"
+            >
+              Privacy Policy
+            </a>
+            .
           </p>
 
           {/* Buttons */}
           <div className="mt-4">
             <div className="flex flex-col space-y-2 items-center">
               <a
-                href="https://app.staging.voxtir.com"
+                href="app.staging.voxtir.com"
                 className="bg-blue-800 text-white hover:bg-blue-600 w-32 h-12 rounded-2xl block text-center pt-3"
               >
                 Beta access
